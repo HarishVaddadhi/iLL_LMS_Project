@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaHud - Students Share Their Thoughts</title>
+    <link rel="stylesheet" href="../styles/ideahud.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IdeaHud - Share Your Thoughts</h1>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+
+    <nav>
+        <div class="logo-container">
+            <a href="home.html" target="_parent">
+                <img class="logo" src="../../../public/images/home.png" alt="Home">
+                Home
+            </a>
+            <a href="courses.html" target="_parent">
+                <img class="logo" src="../../../public/images/meeting.png" alt="Courses">
+                Courses
+            </a>
+            <a href="assignments.html" target="_parent">
+                <img class="logo" src="../../../public/images/homework.png" alt="Assignments">
+                Assignments
+            </a>
+            <a href="profile.html" target="_parent">
+                <img class="logo" src="../../../public/images/profile.png" alt="Profile">
+                Profile
+            </a>
+            <a href="events.html" target="_parent">
+                <img class="logo" src="../../../public/images/calendar.png" alt="Events">
+                Events
+            </a>
+        </div>
+    </nav>
+
+    <section class="container" id="main-content">
+        <div class="ideahud-content">
+            <h2>Welcome to IdeaHud - Share Your Thoughts!</h2>
+            <p>Express your ideas and thoughts to foster creativity and collaboration among students.</p>
+
+            <div class="idea-form">
+                <label for="idea">Your Idea:</label>
+                <textarea id="idea" name="idea" rows="4" placeholder="Share your thoughts..."></textarea>
+                <button onclick="submitIdea()">Submit Idea</button>
+            </div>
+
+            <div class="idea-feed">
+                <!-- Display submitted ideas here -->
+                <!-- Example: <div class="idea-item">Idea 1: ------------------ </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 College LMS</p>
+        <p class="support">College LMS Support - <a href="support.html">Click Here</a></p>
+    </footer>
+
+    <script>
+        function logout() {
+            window.location.href = 'login.html';
+        }
+
+        function submitIdea() {
+            // Add logic to handle idea submission
+            var ideaText = document.getElementById('idea').value;
+            if (ideaText.trim() !== '') {
+                var ideaItem = document.createElement('div');
+                ideaItem.className = 'idea-item';
+                ideaItem.textContent = 'Idea: ' + ideaText;
+                document.querySelector('.idea-feed').appendChild(ideaItem);
+                document.getElementById('idea').value = ''; // Clear the textarea
+            }
+        }
+    </script>
+</body>
+
+</html>

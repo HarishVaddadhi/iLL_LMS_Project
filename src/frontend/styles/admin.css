@@ -1,0 +1,98 @@
+/* Netflix-like styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #141414;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #b81b1b;
+}
+
+.sidebar {
+    background-color: #1c1c1c;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+    color: #b81b1b;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-content section {
+    margin-bottom: 20px;
+}
+
+.main-content section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content section p {
+    line-height: 1.6;
+}

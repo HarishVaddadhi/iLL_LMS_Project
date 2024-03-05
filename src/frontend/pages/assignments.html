@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments | College LMS</title>
+    <link rel="icon" type="image/x-icon" href="../../../public/images/ico-logo.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/assignments.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="home.html" target="_parent">
+                <img class="logo" src="../../../public/images/home.png" alt="Home">
+                Home
+            </a>
+            <a href="courses.html" target="_parent">
+                <img class="logo" src="../../../public/images/meeting.png" alt="Courses">
+                Courses
+            </a>
+            <a href="assignments.html" target="_parent">
+                <img class="logo" src="../../../public/images/homework.png" alt="Assignments">
+                Assignments
+            </a>
+            <a href="profile.html" target="_parent">
+                <img class="logo" src="../../../public/images/profile.png" alt="Profile">
+                Profile
+            </a>
+            <a href="events.html" target="_parent">
+                <img class="logo" src="../../../public/images/calendar.png" alt="Events">
+                Events
+            </a>
+        </div>
+    </nav>
+    <section class="container">
+        <h2>Assignments</h2>
+        <p>Your assignments for the current semester are:</p>
+        <ul>
+            <li id="assignment1">Assignment 1: Due <button id="takeQuizBtn">Take Quiz</button></li>
+        </ul>
+    </section>
+    <script>
+    document.getElementById('takeQuizBtn').addEventListener('click', () => {
+        location.href = 'quiz.html'; 
+      });
+      </script>
+</body>
+</html>

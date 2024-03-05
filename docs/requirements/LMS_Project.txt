@@ -1,0 +1,35 @@
+LMS_Project/
+│
+├───app.py                          # Main application file
+│
+├───docs/                           # Documentation
+│   ├───requirements/               # Requirements documents
+│   └───design/                     # Design documents
+│
+├───src/                            # Source code
+│   ├───frontend/                   # Frontend code
+│   │   ├───components/             # Reusable UI components
+│   │   ├───pages/                  # Pages of the application
+│   │   └───styles/                 # CSS or styling files
+│   │
+│   └───backend/                    # Backend code
+│       ├───controllers/            # Controller logic
+│       ├───models/                 # Database models
+│       ├───routes/                 # API routes
+│       └───utils/                  # Utility functions
+│
+├───database/                       # Database related files
+│   ├───migrations/                 # Database migration scripts
+│   └───seeds/                      # Seed data for database
+│
+├───tests/                          # Automated tests
+│   ├───unit/                       # Unit tests
+│   └───integration/                # Integration tests
+│
+├───public/                         # Public assets
+│   ├───images/                     # Image assets
+│   └───videos/                     # Video assets
+│
+└───config/                         # Configuration files
+    ├───environment/                # Environment-specific configurations
+    └───security/                   # Security configurations
